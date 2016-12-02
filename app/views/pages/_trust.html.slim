@@ -1,0 +1,19 @@
+.trust
+	.container
+		.row
+			h2.text-center
+				|Почему нам доверяют?
+			.col-md-3.col-md-offset-1.text-center
+				=image_tag("trust/support.png")
+				.trust-text
+					|Дружелюбная поддержка, которая ответит на любые ваши вопросы.
+			.col-md-4.text-center
+				=image_tag("trust/garant.png", class: "center-img")
+				.trust-text
+					|Гарантия на отсутствие заводских браков и неисправностей.
+			.col-md-3.text-center
+				=image_tag("trust/dostavka.png")
+				br
+				.trust-text
+					|Быстрая доставака курьером по Москве. По России доставка Почтой России. 
+		=render "vkcomments"

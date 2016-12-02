@@ -1,0 +1,65 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$navbar-default-color: #fff;
+$navbar-default-link-color: #fff;
+$navbar-default-link-active-color: #aaa;
+$navbar-default-link-hover-color: #aaa;
+
+
+$first-color: #e00f36;
+$first-shadow: 0 0 30px rgba(224,15, 54,1);
+
+$first-color: #2779cd;
+$first-color2: #337fcd;
+$first-shadow: 0 0 30px rgba(27,108, 191, 0.8);
+$first-shadow-hover: 0 0 10px rgba(27,108, 191, 0.8);
+$first-shadow-small: 0 0 10px rgba(27,108, 191, 0.8);
+$first-shadow-small-hover: 0 0 5px rgba(27,108, 191, 0.8);
+$second-color: #0666c9;
+
+.basic-gradient{
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMGExNCIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMzg3MCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top, rgba(0,10,20,0.7) 0%, rgba(0,56,112,0) 100%);
+background: -webkit-linear-gradient(top, rgba(0,10,20,0.7) 0%,rgba(0,56,112,0) 100%);
+background: linear-gradient(to bottom, rgba(0,10,20,0.7) 0%,rgba(0,56,112,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000a14', endColorstr='#00003870',GradientType=0 );
+transition: all 0.5s ease-out;
+}
+
+
+.buy-btn{
+	font-family: 'Roboto', sans-serif;
+	background-color: $first-color;
+	color: #fff !important;
+	padding: 13px 25px;
+	border-radius: 25px;
+	box-shadow: $first-shadow; 
+	transition: all 0.3s ease-out;
+	text-shadow: none;
+	&:hover{
+		text-decoration: none;
+		box-shadow: $first-shadow-hover;
+		color: #fff !important;
+			background-color: $second-color;
+	}
+}
+
+.buy-btn-small{
+	@extend .buy-btn;
+	box-shadow: $first-shadow-small; 
+	padding: 5px 15px;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	&:hover{
+		box-shadow: $first-shadow-small-hover;
+	}
+}
+
+.color{
+	color: $first-color2;
+	text-shadow: $first-shadow;
+}
+
+
