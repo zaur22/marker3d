@@ -5,7 +5,6 @@ set :application, 'application'
 set :repo_url, "git@github.com:zaur22/marker3d.git"
 set :unicorn_config_path, "#{current_path}/config/production/unicorn/unicorn.rb"
 set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system') # Строчка есть по умолчанию в deploy.rb, ее просто надо откомментировать
-set :linked_files, %w{config/database.yml config/secrets.yml}
 namespace :deploy do
   task :setup do
     before "deploy:migrate", :create_db
