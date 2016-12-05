@@ -1,0 +1,45 @@
+#ftr.footer
+	.container
+		.row
+			.center-line
+			.col-md-5.col-md-offset-1
+				.duo-block
+					h2 Контакты:
+					h4
+						|тел: +7-905-567-40-00
+						br
+						|e-mail: info@marker3D.ru
+						br
+						| c 8:00 до 24:00
+			.col-md-5
+				.duo-block
+					h3
+						|Остались вопросы?
+						br
+						|Мы ответим на все!
+					=form_tag "/send_email", remote: 'true', method: "post" do
+						.form-group
+							=text_field_tag 'name', '', placeholder:'Ваше имя', type: 'tel', class: 'form-control'
+						.form-group
+							=text_field_tag 'number', '', placeholder:'Номер телефона', type: 'tel', class: 'form-control'
+						=hidden_field_tag 'type', ' --------'
+						=hidden_field_tag 'type', ' Просят перезвонить'
+						.form-group
+							=submit_tag(" Перезвоните мне! ", class: "btn btn-primary btn-block center-block")
+.last-block
+	.container
+		.row
+			.col-md-4
+				h3
+					|Marker3D.ru
+				h5
+					|3D ручки Myriwell Stereo
+			.col-md-4.text-center
+				br
+				|Copyright 2016 by Marker3D.ru
+			.col-md-4.text-right
+				h4
+					|+7-905-567-40-00
+					br
+					|info@marker3D.ru
+	

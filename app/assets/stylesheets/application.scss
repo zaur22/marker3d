@@ -19,6 +19,10 @@ $container-large-desktop: 1000px;
 @import "bootstrap";
 @import 'slick';
 
+
+.row{
+	position: relative;
+}
 h1, h2, h3, h4{
 	font-family: 'Roboto', 'Helvetica', Helvetica, arial, sans-serif;
 }
@@ -59,6 +63,9 @@ body{
 			margin-top: 0px;
 		}
 	}
+	.logo{
+		color: #fff;
+	}
 }
 
 .white-nav{
@@ -66,7 +73,10 @@ body{
 	li a{
 		color: #444 !important;
 	}
-	box-shadow: 0px 0px 5px rgba(0,0,0, 0.4)
+	box-shadow: 0px 0px 5px rgba(0,0,0, 0.4);
+	.logo{
+		color: #333;
+	}
 }
 
 .navbar-nav{
@@ -98,7 +108,7 @@ body{
 	padding-top: 150px;
 	color: #fff;
 		h4{
-			font-size: 16px;
+			font-size: 18px;
 			line-height: 1.2;
 			max-width: 400px;
 		}
@@ -184,16 +194,15 @@ body{
 
 .property-wrap{
 	position: relative;
-
 	.slick-3dpen-carousel{
-		background-color: rgb(255, 247, 247);
+		background-color: $backgr_color_2;
 		padding-bottom: 0px;
 		.slick-img-container{
 			height: 380px;
-			padding: 0px 4px;
+			padding: 0px 4px 1px;
 			img{
 				height: 100%;
-
+				box-shadow: 1px 0px 2px rgba(0,0,0, 0.1);
 			}
 		}
 	}
@@ -235,7 +244,7 @@ body{
 
 
 .kits{
-	background-color: #f7f9ff;
+	background-color: $backgr_color_1;
 	padding-top: 90px;
 	padding-bottom: 60px;
 	transition: all 0.3s ease-out;
@@ -411,7 +420,7 @@ body{
 .security{
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background-color: #f7f9ff;
+	background-color: $backgr_color_1;
 	h4{
 		padding-top: 10px;
 		padding-bottom: 30px;
@@ -419,7 +428,7 @@ body{
 }
 
 .questions{
-	background-color: #fff7f7;
+	background-color: $backgr_color_2;
 	h2{
 		padding-top: 60px;
 		padding-bottom: 30px;
@@ -434,7 +443,76 @@ body{
 
 }
 
+.about-plastic{
+	padding: 110px 0 110px;
+    background: url(../assets/fil.png) no-repeat -100px -70px;    
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
 
 #vk_comments{
 	margin: 30px auto;
+}
+
+.danger{
+	background-color: #df5a49;
+	color: #fff;
+	padding: 110px 0px 90px;
+	font-family: 'Roboto', 'Helvetica', Helvetica, arial, sans-serif;
+	font-size: 16px;
+	.danger-text-wrap{
+		padding-top: 23px;
+	}
+	.danger-text-content{
+		p{
+			padding-bottom: 8px;
+		}
+	}
+	.bolder{
+		h4{
+			font-weight: bold;
+		}
+	}
+}
+
+
+
+.dandp{
+	padding: 50px 0px 50px;
+	li{
+		font-size: 16px;
+		padding-bottom: 7px;
+	}
+	ul{
+		padding-left: 20px;
+	}
+}
+
+.footer{
+	background-color: #f0f0f0;
+	padding: 60px 0px 40px;
+	h4{
+		line-height: 1.8;
+	}
+	h3{
+		line-height: 1.3;
+	}
+}
+
+.last-block{
+	padding: 20px 0px 0px;
+	color: #f0f0f0;
+	background-color: #242424;
+	h3{
+		margin-top: 0px;
+	}
+}
+
+.center-line{
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	height: 90%;
+	border: 1px #dcdcdc solid;
+	content: " ";
 }

@@ -1,0 +1,58 @@
+div class="modal fade form-1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
+	div class="modal-dialog modal-sm"
+		div class="modal-content"
+			div class="modal-header"
+          		button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
+	          	h4 class="modal-title" id="mySmallModalLabel"
+	          		|Базовый комплект
+			.modal-body
+				=form_tag "/send_email", remote: 'true', method: "post" do
+
+					.form-group
+						=text_field_tag 'name', '', placeholder:'Ваше имя', type: 'tel', class: 'form-control'
+					.form-group
+						=text_field_tag 'number', '', placeholder:'Номер телефона', type: 'tel', class: 'form-control'
+					.form-group
+						=select_tag 'color', options_for_select([['Синий цвет'], ['Красный цвет'], ['Жёлтый цвет'], ['Розовый цвет']]), prompt: "Выберите цвет ручки", class: "form-control"
+					=hidden_field_tag 'type', 'Базовый комплект'
+					.form-group
+						=submit_tag(" Купить ", class: "btn btn-primary btn-block center-block")
+
+div class="modal fade form-2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
+	div class="modal-dialog modal-sm"
+		div class="modal-content"
+			div class="modal-header"
+          		button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
+	          	h4 class="modal-title" id="mySmallModalLabel"
+	          		|Рекомендуемый комплект
+			.modal-body
+				=form_tag "/send_email", remote: 'true', method: "post" do
+
+					.form-group
+						=text_field_tag 'name', '', placeholder:'Ваше имя', type: 'tel', class: 'form-control'
+					.form-group
+						=text_field_tag 'number', '', placeholder:'Номер телефона', type: 'tel', class: 'form-control'
+					.form-group
+						=select_tag 'color', options_for_select([['Синий цвет'], ['Красный цвет'], ['Жёлтый цвет'], ['Розовый цвет']]), prompt: "Выберите цвет ручки", class: "form-control"
+					=hidden_field_tag 'type', 'Рекомендуемый комплект'
+					.form-group
+						=submit_tag(" Купить ", class: "btn btn-primary btn-block center-block")
+div class="modal fade form-3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
+	div class="modal-dialog modal-sm"
+		div class="modal-content"
+			div class="modal-header"
+          		button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
+	          	h4 class="modal-title" id="mySmallModalLabel"
+	          		|Расширенный комплект
+			.modal-body
+				=form_tag "/send_email", remote: 'true', method: "post" do
+
+					.form-group
+						=text_field_tag 'name', '', placeholder:'Ваше имя', type: 'tel', class: 'form-control'
+					.form-group
+						=text_field_tag 'number', '', placeholder:'Номер телефона', type: 'tel', class: 'form-control'
+					.form-group
+						=select_tag 'color', options_for_select([['Синий цвет'], ['Красный цвет'], ['Жёлтый цвет'], ['Розовый цвет']]), prompt: "Выберите цвет ручки", class: "form-control"
+					=hidden_field_tag 'type', 'Расширенный комплект'
+					.form-group
+						=submit_tag(" Купить ", class: "btn btn-primary btn-block center-block")

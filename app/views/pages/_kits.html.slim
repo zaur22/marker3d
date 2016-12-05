@@ -1,4 +1,4 @@
-.kits
+#kit-block.kits
 	.container
 		.row
 			h2.text-center
@@ -26,7 +26,7 @@
 								br
 								| (5 цветов)
 					div.text-center.btn-block
-						a.kit-buy-btn
+						a.kit-buy-btn data-toggle="modal" data-target=".form-1"
 							| Купить
 			.col-md-4.kit.second
 				div.kit-wrap
@@ -54,7 +54,7 @@
 								br
 								| (5 цветов)
 					div.text-center.btn-block
-						a.kit-buy-btn
+						a.kit-buy-btn data-toggle="modal" data-target=".form-2"
 							| Купить
 			.col-md-4.kit.third
 				div.kit-wrap
@@ -83,6 +83,6 @@
 								br
 								| (5 цветов)
 					div.text-center.btn-block
-						a.kit-buy-btn
+						a.kit-buy-btn data-toggle="modal" data-target=".form-3"
 							| Купить
 	=render "plastic"
