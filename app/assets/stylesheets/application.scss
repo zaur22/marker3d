@@ -66,6 +66,23 @@ body{
 	.logo{
 		color: #fff;
 	}
+
+	.buy-btn-small{
+		color: #fff; 
+		padding: 5px 15px;
+		font-size: 14px;
+		cursor: pointer;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid #fff;
+	    //margin-top: -2px;
+		border-radius: 100px;
+		transition: all 0.2s ease-out;
+		&:hover{
+			text-decoration: none;
+			background-color: #fff;
+			color: #000;
+		}
+	}
 }
 
 .white-nav{
@@ -76,6 +93,21 @@ body{
 	box-shadow: 0px 0px 5px rgba(0,0,0, 0.4);
 	.logo{
 		color: #333;
+	}
+	.buy-btn-small{
+		color: $first-color; 
+		padding: 5px 15px;
+		font-size: 14px;
+		//margin-top: -2px;
+		cursor: pointer;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid $first-color;
+		border-radius: 100px;
+		&:hover{
+			text-decoration: none;
+			background-color: $first-color;
+			color: #fff;
+		}
 	}
 }
 
@@ -99,7 +131,7 @@ body{
 	    height: auto;
 	    z-index: -100;
 	    transform: translateX(-50%) translateY(-50%);
-	 	background: url('assets/video.jpg') no-repeat;
+	 	background: url(image-url('assets/video.jpg')) no-repeat;
 	  	background-size: cover;
 	  	transition: 1s opacity;
 	}
@@ -120,8 +152,8 @@ body{
 		padding-bottom: 10px;
 		position: relative;
 		color: #fff;
-		font-size: 14px;
-		line-height: 1.1;
+		font-size: 16px;
+		line-height: 1.2;
 		font-family: Helvetica, arial, sans-serif;
 		padding-left: 23px;
 		.glyphicon{
@@ -429,6 +461,7 @@ body{
 
 .questions{
 	background-color: $backgr_color_2;
+	padding-bottom: 60px;
 	h2{
 		padding-top: 60px;
 		padding-bottom: 30px;

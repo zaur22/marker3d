@@ -55,18 +55,6 @@ transition: all 0.5s ease-out;
 			background-color: $second-color;
 	}
 }
-
-.buy-btn-small{
-	@extend .buy-btn;
-	box-shadow: $first-shadow-small; 
-	padding: 5px 15px;
-	font-size: 14px;
-	font-family: 'Roboto', sans-serif;
-	&:hover{
-		box-shadow: $first-shadow-small-hover;
-	}
-}
-
 .color{
 	color: $first-color2;
 	text-shadow: $first-shadow;
@@ -75,5 +63,5 @@ transition: all 0.5s ease-out;
 .duo-block{
 	//display: inline-block;
 	margin: 0px auto;
-	max-width: 250px;
+	max-width: 280px;
 }

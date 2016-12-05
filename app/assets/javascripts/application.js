@@ -40,7 +40,7 @@ $(function(){
 		pauseOnHover: false,
 		autoplay: true,
     	autoplaySpeed: 0,
-    	speed: 20000,
+    	speed: 10000,
     	variableWidth: true,
     	infinite: true,
     	cssEase: 'linear',
