@@ -54,4 +54,8 @@ $(function(){
 			$("#navbar").removeClass("white-nav");
 		}
   	})
+
+  $('.btn-block').click(function(){
+    $(this).closest(".modal-body").addClass('success-wrap')
+  })
 });
