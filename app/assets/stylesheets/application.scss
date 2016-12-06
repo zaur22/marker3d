@@ -450,16 +450,19 @@ body{
 }
 
 .security{
+	font-family: 'Roboto', 'Helvetica', Helvetica, sans-serif;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background-color: $backgr_color_1;
-	h4{
+	color: #fff;
+    background-color: #009cde;
+    background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+	p{
 		padding-top: 10px;
 		padding-bottom: 30px;
-	}
-	p{
-		padding-bottom: 10px;
 		font-size: 16px;
+	}
+	img{
+		padding-bottom: 10px;
 	}
 }
 
@@ -482,14 +485,11 @@ body{
 
 .about-plastic{
 	padding: 110px 0 110px;
-    background: url(fil.png) no-repeat -100px -70px;    
+    background: url(/fil.png) no-repeat -100px -70px;    
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
 
-#vk_comments{
-	margin: 30px auto;
-}
 
 .danger{
 	background-color: #df5a49;
@@ -555,6 +555,10 @@ body{
 }
 
 .comments{
-	background-color: #f2dede;
+		#vk_comments{
+		margin: 30px auto;
+	}
+
+	background-color: $backgr_color_1;
 	padding: 60px 0px 40px;
 }
