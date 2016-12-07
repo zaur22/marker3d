@@ -55,7 +55,10 @@ $(function(){
 		}
   	})
 
-  $('.btn-block').click(function(){
+  $('.modal-body .btn-block').click(function(){
     $(this).closest(".modal-body").addClass('success-wrap')
+  })
+  $('.duo-block .btn-block').click(function(){
+    $(this).closest(".duo-block").addClass('msg-send')
   })
 });

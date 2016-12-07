@@ -1,16 +1,57 @@
 .danger
 	.container
 		.row
-			.col-md-6.text-right
-				h2 
-					|Внимание! Будьте осторожны
-					br
-					|при покупке 3D ручки!
-			.col-md-5.danger-text-wrap
-				.danger-text-content
-					p Купив дешёвую копию 3D ручки, вы подвергаете опасности Ваше здоровье и здоровье ребёнка, ведь подделки не проходят сертификацию безопасности и качества!
-					p Покупая оригинальную 3D ручку Myriwell Stereo у нас, вы получаете уверенность в сохранности здоровья и настроения Вашей семьи:
-				.bolder
-					h4 - Оригинальные 3D ручки Myriwell Stereo.
-					h4 - 12 месяцев гарантии качества.
-					h4 - Сертефицированная безопасность.
+			h2.text-center
+				|Внимание! Будьте осторожны при покупке 
+				br
+				|3D ручки Myriwell Stereo!
+			.col-md-10.col-md-offset-1.text-center.danger-text
+				|В последнее время появилось много предложений дешевых ручек Myriwell Stereo, которые, на самом деле, являются подделками. Покупая эти ручки, Вы рискуете испортить праздник ребенку или себе!
+				br
+				b
+					|Как же различить оригинал от подделок?
+			.col-md-12
+				.col-md-6.original-pen
+					|Оригинальная 3D ручка
+				.col-md-6.text-left.fake-pen
+					span
+						|Дешевая подделка
+			.comparison.col-md-12
+				.left-block-comp
+					.good
+						.img_left
+							=image_tag("comparison/1.png")
+						P
+							|На каждой оригинальной ручке Myriwell есть уникальный серийный номер.
+				.right-block-comp
+					.bad
+						p
+							|На подделках не указывается уникальный серийный номер.
+						.img_right
+							=image_tag("comparison/1.jpg")
+			.comparison.col-md-12
+				.left-block-comp
+					.good
+						.img_left
+							=image_tag("comparison/2.jpg")
+						p
+							|На плате оригинальной ручке Myriwell есть фирменный логотип и ссылка на офицальный сайт производителя myriwell.com.
+				.right-block-comp
+					.bad
+						p
+							|У подделок на плате внутри ручки нет фирменного логотипа и ссылки на офицальный сайт производителя myriwell.com.
+						.img_right
+							=image_tag("comparison/2.png")
+			.comparison.col-md-12
+				.left-block-comp
+					.good
+						.img_left
+							=image_tag("comparison/3.jpg")
+						p
+							|У оригинальной модели 3D ручки Myriwell сменное цельное сопло.
+				.right-block-comp
+					.bad
+						p
+							|У подделок сопло припаяно к плате, сменным является только керамическая насадка.
+						.img_right
+							=image_tag("comparison/3.png")
