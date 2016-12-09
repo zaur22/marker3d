@@ -165,10 +165,6 @@ body{
 }
 
 
-
-
-
-
 .slick-carousel{
 	overflow: hidden;	
 	.slick-img-container{
@@ -180,7 +176,6 @@ body{
 		width: 100%;
 	}
 }
-
 
 
 .how-start{
@@ -223,12 +218,129 @@ body{
 	}
 }
 
+.about-plastic{
+	padding: 110px 0 80px;
+    background: url(/fil.png) no-repeat -100px -70px;    
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    .plastic-wrap{
+    	background-color: rgba(255,255,255, 0.85);
+    	padding: 30px 30px 40px;	
+    }
+}
+
+
+.danger{
+	//background-color: #f4f4f4;
+	position: relative;
+	background-color: #232629;
+	color: #fff;
+	padding: 110px 0px 90px;
+	font-family: 'Roboto', 'Helvetica', Helvetica, arial, sans-serif;
+	font-size: 16px;
+	.grad-backgr{
+		background: radial-gradient(ellipse at top right, rgba(30,87,153,0.7) 0%,rgba(125,185,232,0) 80%);
+		width: 100%;
+		padding-top: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.danger-text{
+		font-size: 16px;	
+		padding-bottom: 60px;
+	}
+	.original-pen{
+		font-size: 24px;
+		text-align: right;
+		padding-right: 20px;
+		padding-top: 30px;
+	}
+	.fake-pen{
+		font-size: 24px;
+		text-align: left;
+		padding-left: 50px;
+		padding-top: 30px;
+		padding-bottom: 15px;
+		span{
+			position: relative;
+			top: 30px;
+		}
+	}
+	.block-params{
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		height: 160px;
+		position: relative;
+		display: block;
+		padding: 20px 20px;
+		background-color: #fff;
+		color: #333;
+		overflow: hidden;
+		width: 100%;
+		-webkit-transform: skewX(-7deg);
+		& > *{
+			-webkit-transform: skewX(7deg);
+		} 
+	}
+	.img-wrap{
+		display: inline-block;
+		position: absolute;
+		overflow: hidden;
+		height: 100%;
+		width: 155px;
+		text-align: center;
+		vertical-align: center;
+		padding: 0px 15px;
+		img{
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	.left-block-comp{
+		width: 50%;
+		display: inline-block;
+		padding-bottom: 30px;
+	}
+
+	.right-block-comp{
+		width: 50%;
+		display: inline-block;
+		margin-left: -3px;
+	}
+	.img_left{
+		top: 0px;
+		left: 0px;
+		@extend .img-wrap
+	}
+	.img_right{
+		top: 0px;
+		right: 0px;
+		@extend .img-wrap;
+	}
+	.good{
+		border-top: 10px #30c75f solid;
+		@extend .block-params;
+		padding-left: 150px;
+		padding-right: 20px;
+	}
+	.bad{
+		position: relative;
+		border-top: 10px #e95a5a solid;
+		top: 20px;
+		@extend .block-params;
+		padding-right: 150px;
+		padding-left: 30px;
+	}
+	.comparison{
+		padding-bottom: 15px;
+	}
+}
 
 .property-wrap{
 	position: relative;
 	.slick-3dpen-carousel{
 		background-color: $backgr_color_2;
-		padding-bottom: 0px;
+		padding-bottom: 50px;
 		.slick-img-container{
 			height: 380px;
 			padding: 0px 4px 0px;
@@ -253,11 +365,11 @@ body{
 	.property-box{
 		display: inline-block;
 		max-width: 410px;
-		background-color: rgba(255, 255, 255, 0.98);
+		background-color: rgba(255, 255, 255, 1);
 	    //background-image: linear-gradient(to bottom, #009cde, #003087);
 	    //background-image: radial-gradient(circle farthest-side at right top, #009cde, #134196 155%);
 	    //	color: #f4f4f4;
-	    box-shadow: 0 0 40px 0 rgba(0,0,0,0.1);
+	    box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
 		padding: 20px 40px;
 		padding-bottom: 35px;
 		font-family: 'Roboto', sans-serif;
@@ -504,115 +616,61 @@ body{
 		background-color: #fff;
 	}
 
-
 }
 
-.about-plastic{
-	padding: 110px 0 80px;
-    background: url(/fil.png) no-repeat -100px -70px;    
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    .plastic-wrap{
-    	background-color: rgba(255,255,255, 0.85);
-    	padding: 30px 30px 40px;	
-    }
-}
-
-
-.danger{
-	background-color: #f4f4f4;
-	padding: 110px 0px 90px;
-	font-family: 'Roboto', 'Helvetica', Helvetica, arial, sans-serif;
+.sec-generation{
+	position: relative;
+	background-color: #232629;
+	font-family: 'Roboto', "Helvetica", Helvetica, arial, sans-serif;
+	overflow: hidden;
 	font-size: 16px;
-	.danger-text{
-		font-size: 16px;	
-	}
-	.original-pen{
-		font-size: 24px;
-		text-align: right;
-		padding-right: 20px;
-		padding-top: 30px;
-	}
-	.fake-pen{
-		font-size: 24px;
-		text-align: left;
-		padding-left: 50px;
-		padding-top: 30px;
-		padding-bottom: 15px;
-		span{
-			position: relative;
-			top: 30px;
-		}
-	}
-	.block-params{
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		height: 160px;
-		position: relative;
-		display: block;
-		padding: 20px 20px;
-		background-color: #fff;
-		overflow: hidden;
+	padding: 60px 0px 60px;
+	color: #fff;
+	.grad-backgr{
+		background-image: radial-gradient(ellipse at top right, rgba(30,87,153,0.7) 0%,rgba(125,185,232,0) 80%);
 		width: 100%;
-		-webkit-transform: skewX(-15deg);
-		& > *{
-			-webkit-transform: skewX(15deg);
-		} 
-	}
-	.img-wrap{
-		display: inline-block;
+		padding-top: 100%;
 		position: absolute;
-		overflow: hidden;
-		height: 100%;
-		width: 195px;
-		text-align: center;
-		vertical-align: center;
-		padding: 0px 15px;
-		img{
-			max-height: 100%;
-			max-width: 100%;
-		}
-	}
-	.left-block-comp{
-		width: 50%;
-		display: inline-block;
-		padding-bottom: 30px;
-	}
-
-	.right-block-comp{
-		width: 50%;
-		display: inline-block;
-		margin-left: -7px;
-	}
-	.img_left{
 		top: 0px;
 		left: 0px;
-		@extend .img-wrap
 	}
-	.img_right{
-		top: 0px;
-		right: 0px;
-		@extend .img-wrap;
-	}
-	.good{
-		border-top: 7px #30c75f solid;
-		@extend .block-params;
-		padding-left: 190px;
-		padding-right: 30px;
-	}
-	.bad{
-		position: relative;
-		border-top: 7px #e95a5a solid;
-		top: 30px;
-		@extend .block-params;
-		padding-right: 195px;
-		padding-left: 50px;
-	}
-	.comparison{
+	.about{
+		padding-top: 10px;
 		padding-bottom: 30px;
 	}
+	h3{
+		padding-bottom: 5px;
+	}
+	.blocks{
+		display: block;
+		width: 100%;
+		max-width: 950px;
+		margin: 0px auto;
+		z-index: 2; 
+	}
+	ul{
+		padding-left: 25px;
+		li{
+			padding-bottom: 7px;
+		}
+	}
+	.block-wrap{
+		display: inline-block;
+		width: 33.3%;
+		padding: 10px;
+	}
+	.line-border{
+		border: 1px #fff solid;
+		border-radius: 3px;
+		padding: 5px 17px 10px;
+	}
+	.white{
+		background-color: #fff;
+		color: #232629;
+		border-radius: 3px;
+	}
+	
 }
-
-
 
 .dandp{
 	padding: 50px 0px 50px;
@@ -670,7 +728,7 @@ body{
 }
 
 .comments{
-		#vk_comments{
+	#vk_comments{
 		margin: 30px auto;
 	}
 
