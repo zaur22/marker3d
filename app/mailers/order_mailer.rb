@@ -5,6 +5,6 @@ class OrderMailer < ApplicationMailer
 		@number = number
 		@type = order_type
 		@color = color
-		mail(to: "3dpen@bk.ru", subject: "Заказ! #{order_type} !")
+		mail(to: "3dpen@bk.ru", subject: "Заказ! #{order_type} !")	
 	end
 end
