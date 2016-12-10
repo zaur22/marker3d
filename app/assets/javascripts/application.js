@@ -19,6 +19,10 @@
 
 $(function(){
 	$('body').scrollspy({ target: '#navbar-example' });
+  
+  var $video = $("video");
+  $video.on('canplaythrough', function() {this.play();});
+
 
 	$('.slick-carousel').slick({
 		slidesToShow: 5,
