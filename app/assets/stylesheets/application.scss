@@ -303,9 +303,11 @@ body{
 	}
 
 	.right-block-comp{
+		position: absolute;
+		top: 0px;
+		right: 3px;
 		width: 50%;
 		display: inline-block;
-		margin-left: -3px;
 	}
 	.img_left{
 		top: 0px;
@@ -332,6 +334,7 @@ body{
 		padding-left: 30px;
 	}
 	.comparison{
+		position: relative;
 		padding-bottom: 15px;
 	}
 }

@@ -12,7 +12,7 @@ $first-color: #e00f36;
 $first-shadow: 0 0 30px rgba(224,15, 54,1);
 
 $first-color: #2779cd;
-$first-color2: #337fcd;
+$first-color2: #51a9ee;
 $first-shadow: 0 0 30px rgba(27,108, 191, 0.8);
 $first-shadow-hover: 0 0 10px rgba(27,108, 191, 0.8);
 $first-shadow-small: 0 0 10px rgba(27,108, 191, 0.8);
@@ -57,7 +57,7 @@ $backgr_color_2: #FFB74D;
 }
 .color{
 	color: $first-color2;
-	text-shadow: $first-shadow;
+	//text-shadow: $first-shadow;
 }
 
 .duo-block{
@@ -86,3 +86,32 @@ $backgr_color_2: #FFB74D;
 }
 
 
+.btn-buy{
+	font-family: 'Roboto';
+	font-size: 16px;
+    line-height: 42px;
+	background-color: #0070c9;
+    background: -webkit-linear-gradient(#42a1ec,#0070c9);
+    background: linear-gradient(#42a1ec,#0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    text-align: center;
+    white-space: nowrap;
+    &:hover {
+	    background-color: #147bcd;
+	    background: -webkit-linear-gradient(#51a9ee,#147bcd);
+	    background: linear-gradient(#51a9ee,#147bcd);
+	    border-color: #1482d0;
+	    text-decoration: none;
+	    color: #fff;
+	}
+}
