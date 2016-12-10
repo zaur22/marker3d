@@ -233,11 +233,11 @@ body{
 .danger{
 	//background-color: #f4f4f4;
 	position: relative;
-	background-color: #232629;
-	color: #fff;
+	background-color: #eff3f9;
+	//color: #24243b;
 	padding: 110px 0px 90px;
 	font-family: 'Roboto', 'Helvetica', Helvetica, arial, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	.grad-backgr{
 		background: radial-gradient(ellipse at top right, rgba(30,87,153,0.7) 0%,rgba(125,185,232,0) 80%);
 		width: 100%;
@@ -465,11 +465,11 @@ body{
 		.kit-buy-btn{
 			background-color: #000;
 			color: #fff;
-			padding: 10px 50px;
+			padding: 14px 50px;
 			border-width: 0px;
 			border-radius: 50px;
 			cursor: pointer;
-			font-size: 19px;
+			font-size: 16px;
 			font-family: 'Roboto', 'Helvetica', Helvetica, arial, sans-serif;
 
 			&:hover{
@@ -503,9 +503,9 @@ body{
 			background-image: linear-gradient(to right, #3fd4d3, #4582d7);
 		}
 		.kit-buy-btn{
-			background: linear-gradient(to right, #3fd4d3, #4582d7);	
+			background: linear-gradient(to bottom, #3fd4d3, #4582d7);	
 			&:hover{
-				background: linear-gradient(to right, #31a3d2, #31a3d2);;
+				background: linear-gradient(to bottom, #31a3d2, #31a3d2);;
 			}
 		}
 
@@ -524,9 +524,9 @@ body{
 			background: linear-gradient(to right, #c3e046, #30c75f);
 		}
 		.kit-buy-btn{
-			background: linear-gradient(to right, #c3e046, #30c75f);
+			background: linear-gradient(to bottom, #c3e046, #30c75f);
 			&:hover{
-				background: linear-gradient(to right, #65c163, #65c163);
+				background: linear-gradient(to bottom, #65c163, #65c163);
 			}
 		}
 	}
@@ -545,9 +545,9 @@ body{
 			background: linear-gradient(to right, #3d6ccb, #9521e8);
 		}
 		.kit-buy-btn{
-			background: linear-gradient(to right, #3d6ccb, #9521e8);
+			background: linear-gradient(to bottom, #3d6ccb, #9521e8);
 			&:hover{
-				background: linear-gradient(to right, #594eb1, #594eb1);
+				background: linear-gradient(to bottom, #594eb1, #594eb1);
 			}
 		}
 	}
