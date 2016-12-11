@@ -633,12 +633,14 @@ body{
 
 .sec-generation{
 	position: relative;
-	background-color: #232629;
+	background-color: #eff3f9;
 	font-family: 'Roboto', "Helvetica", Helvetica, arial, sans-serif;
 	overflow: hidden;
 	font-size: 16px;
 	padding: 60px 0px 60px;
-	color: #fff;
+	img{
+		width: 100%;
+	}
 	.grad-backgr{
 		background-image: radial-gradient(ellipse at top right, rgba(30,87,153,0.7) 0%,rgba(125,185,232,0) 80%);
 		width: 100%;
@@ -667,20 +669,18 @@ body{
 			padding-bottom: 7px;
 		}
 	}
-	.block-wrap{
-		display: inline-block;
-		width: 33.3%;
-		padding: 10px;
-	}
 	.line-border{
-		border: 1px #fff solid;
+		border: 3px #eda2a2 solid;
 		border-radius: 3px;
-		padding: 5px 17px 10px;
 	}
 	.white{
 		background-color: #fff;
 		color: #232629;
 		border-radius: 3px;
+		border: 3px #30c75f solid
+	}
+	.wrap{
+		padding: 5px 17px 10px;
 	}
 	
 }
@@ -748,3 +748,4 @@ body{
 	background-color: #edeef0;
 	padding: 60px 0px 40px;
 }
+
