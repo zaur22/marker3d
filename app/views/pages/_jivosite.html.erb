@@ -1,7 +1,14 @@
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-if(!isSafari){
+var isTelephon = function(){
+	if (window.innerWidth <= 800){
+		return true;
+	}else{
+		return false;
+	}
+}
+if(!isSafari && !isTelephon()){
 	var widget_id = '6w9iAOsey3';
 	var d=document;
 	var w=window;
@@ -22,5 +29,7 @@ if(!isSafari){
 		}
 	}
 };
+
+
 </script>
 <!-- {/literal} END JIVOSITE CODE -->

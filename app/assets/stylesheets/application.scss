@@ -146,7 +146,7 @@ body{
 		}
 	}
 	.helpful{
-		padding-top: 32px;
+		padding-top: 10px;
 	}
 	.helpful-unit{
 		padding-bottom: 10px;
@@ -392,7 +392,7 @@ body{
 
 .kits{
 	background-color: #fff;
-	padding-top: 90px;
+	padding-top: 50px;
 	padding-bottom: 60px;
 	transition: all 0.3s ease-out;
 	position: relative;
@@ -402,7 +402,7 @@ body{
 		width: 100%;
 		left: 0px;
 		top: 0px;	
-		height: 400px;
+		height: 485px;
 	}
 
 	.white-wrap{
@@ -421,12 +421,17 @@ body{
 		text-align: center;
 	}
 	h2{
-		padding-bottom: 30px;
+		//padding-bottom: 30px;
 		//color: #fff;
+		margin-bottom: 0px;
+	}
+	.plastic-ord{
+		padding-bottom: 30px;
 	}
 	.kit{
 		img{
 			width: 100%;
+			border-bottom: 2px solid #f4f4f4;
 		}
 		.kit-wrap{
 			position: relative;
@@ -445,7 +450,7 @@ body{
 			padding: 0px 10px;
 			li{
 				list-style-type: none;
-				padding: 7px 20px;
+				padding: 4px 20px;
 			}
 		}
 		.kit-name{
@@ -558,6 +563,11 @@ body{
 		padding-top: 90px;
 		padding-bottom: 60px;
 		position: relative;
+		h2{
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+		}
+
 		.background{
 			height: 400px;
 		}
@@ -677,7 +687,7 @@ body{
 		background-color: #fff;
 		color: #232629;
 		border-radius: 3px;
-		border: 3px #30c75f solid
+		border: 5px #78dc98 solid
 	}
 	.wrap{
 		padding: 5px 17px 10px;
