@@ -23,13 +23,14 @@ $(function(){
   var $video = $("video");
   $video.on('canplaythrough', function() {this.play();});
 
+   $('[data-toggle="tooltip"]').tooltip()
 
 	$('.slick-carousel').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		autoplay: true,
     	autoplaySpeed: 0,
-    	speed: 20000,
+    	speed: 18000,
     	//variableWidth: true,
     	infinite: true,
     	cssEase: 'linear',
@@ -44,7 +45,7 @@ $(function(){
 		pauseOnHover: false,
 		autoplay: true,
     	autoplaySpeed: 0,
-    	speed: 10000,
+    	speed: 12000,
     	variableWidth: true,
     	infinite: true,
     	cssEase: 'linear',

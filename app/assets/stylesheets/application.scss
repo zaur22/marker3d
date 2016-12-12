@@ -342,10 +342,10 @@ body{
 .property-wrap{
 	position: relative;
 	.slick-3dpen-carousel{
-		background-color: $backgr_color_2;
+		background-color: #FFB74D;
 		padding-bottom: 50px;
 		.slick-img-container{
-			height: 380px;
+			height: 460px;
 			padding: 0px 4px 0px;
 			img{
 				height: 100%;
@@ -372,6 +372,7 @@ body{
 	    //background-image: linear-gradient(to bottom, #009cde, #003087);
 	    //background-image: radial-gradient(circle farthest-side at right top, #009cde, #134196 155%);
 	    //	color: #f4f4f4;
+	    font-size: 17px;
 	    box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
 		padding: 20px 40px;
 		padding-bottom: 35px;
@@ -386,16 +387,21 @@ body{
 	.glyphicon{
 		position: absolute;
 		left: 0px;
+		padding-top: 3px;
+		font-size: 14px;
 	}
 }
 
 
 .kits{
-	background-color: #fff;
-	padding-top: 50px;
+	background-color: #eff3f9;
+	padding-top: 60px;
 	padding-bottom: 60px;
 	transition: all 0.3s ease-out;
 	position: relative;
+	.first-h{
+		margin-bottom: 50px;
+	}
 	.background{
 		background-color: #bbdefb;
 		position: absolute;
@@ -437,7 +443,7 @@ body{
 			position: relative;
 			//border: 2px solid #ddd;
 			border-radius: 1px;
-			overflow: hidden;
+			//overflow: hidden;
 			border-color: #fff;
 			background-color: #fff;
 		    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -447,7 +453,7 @@ body{
 			padding: 0px;
 		}
 		.kit-list{
-			padding: 0px 10px;
+			padding: 0px 9px;
 			li{
 				list-style-type: none;
 				padding: 4px 20px;
@@ -464,8 +470,8 @@ body{
 			left: 0px;
 		}
 		.btn-block{
-			padding-bottom: 55px;
-			padding-top: 30px;	
+			padding-bottom: 35px;
+			padding-top: 10px;	
 		}
 		.kit-buy-btn{
 			background-color: #000;
@@ -558,18 +564,12 @@ body{
 	}
 
 	.plastics{
-		background-color: #bbdefb;
-		margin-top: 90px;
-		padding-top: 90px;
+		margin-top: 60px;
 		padding-bottom: 60px;
 		position: relative;
 		h2{
 			margin-bottom: 0px;
 			padding-bottom: 0px;
-		}
-
-		.background{
-			height: 400px;
 		}
 		.plastic{
 			h4{
@@ -696,10 +696,79 @@ body{
 }
 
 .dandp{
+	background-color: #F9F9F9;
 	padding: 50px 0px 50px;
+	h2{
+		padding-bottom: 30px;
+	}
+	h3{
+		margin: 0px;
+		margin-top: 21px;
+		font-weight: bold;
+	}
+	.post{
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		width: 56px;
+		height: 45px;
+	}
+	.pay{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 50px;
+		height: 40px;
+	}
+	.pay-text{
+		padding-bottom: 30px;
+	}
+	.color-wrap{
+		float: left;
+		background-color: #fff;
+		border: 1px solid #F1F1F1;
+		border-radius: 8px;
+    	position: relative;
+    	padding: 0px 10px;
+    	margin-bottom: 30px;
+	}
+	.wrap{
+		padding-top: 25px;
+	}
 	li{
 		font-size: 16px;
 		padding-bottom: 7px;
+	}
+	.b-t{
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.l-t{
+		font-size: 16px;
+	}
+	.time{
+		font-size: 16px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		color: #42a1ec;
+		.glyphicon{
+			font-size: 13.5px;
+		}
+		.time-text{
+			padding-left: 5px;
+		}
+	}
+	.security-lock{
+		margin-top: 20px;
+		padding-bottom: 18px;
+		font-size: 16px;
+		color: #42a1ec;
+		.glyphicon{
+			font-size: 14px;
+		}
+		.sec-text{
+			padding-left: 5px;
+		}
 	}
 	ul{
 		padding-left: 20px;

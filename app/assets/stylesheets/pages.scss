@@ -101,8 +101,8 @@ $backgr_color_2: #FFB74D;
     cursor: pointer;
     display: inline-block;
     min-width: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 1px;
     text-align: center;
     white-space: nowrap;
@@ -113,5 +113,123 @@ $backgr_color_2: #FFB74D;
 	    border-color: #1482d0;
 	    text-decoration: none;
 	    color: #fff;
+	}
+}
+.kit-btn-buy{
+	font-family: 'Roboto';
+	font-size: 16px;
+    line-height: 42px;
+	background-color: #0070c9;
+    background: -webkit-linear-gradient(#42a1ec,#0070c9);
+    background: linear-gradient(#42a1ec,#0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    text-align: center;
+    white-space: nowrap;
+    &:hover {
+	    background-color: #147bcd;
+	    background: -webkit-linear-gradient(#51a9ee,#147bcd);
+	    background: linear-gradient(#51a9ee,#147bcd);
+	    border-color: #1482d0;
+	    text-decoration: none;
+	    color: #fff;
+	}
+}
+
+.kit-btn-buy-green{
+	font-family: 'Roboto';
+	font-size: 16px;
+    line-height: 42px;
+	background-color: #059829;
+    background: -webkit-linear-gradient(#8cf140, #09a730);
+    background: linear-gradient(#8cf140, #09a730);
+    border-color: #059829;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    text-align: center;
+    white-space: nowrap;
+    &:hover {
+	    background-color: #93fd43;
+    	background: -webkit-linear-gradient(#93fd43, #09a730);
+    	background: linear-gradient(#93fd43, #09a730);
+    	border-color: #059829;
+	    text-decoration: none;
+	    color: #fff;
+	}
+}
+
+
+
+.plastic-color{
+		margin: 24px 10px 15px;
+		text-align: center;
+		span{
+			display: inline-block;
+			height: 15px;
+			width: 15px;
+			border-radius: 40px;
+			margin: 0px 5px;
+		}
+	.pink{
+		background-color: #F06292;
+	}
+	.cyan{
+		background-color: #00BCD4;
+	}
+	.red{
+		background-color: #f44336;
+	}
+	.orange{
+		background-color: #FB8C00;
+	}
+	.lime{
+		background-color: #AEEA00;
+	}
+	.black{
+		background-color: #000000;
+	}
+	.blue{
+		background-color: #1976D2;
+	}
+	.purp{
+		background-color: #8E24AA;
+	}
+	.gray{
+		background-color: #9E9E9E;
+	}
+	.yellow{
+		background-color: #FFEB3B;
+	}
+
+}
+
+
+.glyphicon-question-sign{
+	color: #b0b0b0;
+	text-decoration: none;
+	cursor: pointer;
+	position: relative;
+	margin-right: -30px;
+	top: 3px;
+	&:hover{
+		color: #808080;
+		text-decoration: none;	
 	}
 }

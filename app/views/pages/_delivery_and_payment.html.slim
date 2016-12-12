@@ -1,19 +1,166 @@
 #dp.dandp
 	.container
 		.row
-			.col-md-5.col-md-offset-1
-				.duo-block
-					h3 Стоимость доставки:
-					ul
-						li Курьером по Москве - 290 руб.
-						li Курьером по МО - 390 руб.
-						li По России - от 290 руб.
-			.col-md-5
-				.duo-block
-					h3 Способы оплаты:
-					ul
-						li Наличными курьеру, при получении заказа.
-						li На карту Сбербанка.
-						li Qiwi (Киви), Яндекс Деньги.
-			.center-line
+			h2.text-center
+				| Способы доставки
+
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|По Москве
+						=image_tag("delivery.svg", class: "post")
+					.col-md-6.wrap
+						.b-t
+							|Самовывоз
+						.l-t
+							|Бесплатно
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| сегодня
+					.col-md-6.wrap
+						.b-t
+							|Доставка
+						.l-t
+							|290 руб
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| 1 день
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|По Саратову
+						=image_tag("delivery.svg", class: "post")
+					.col-md-6.wrap
+						.b-t
+							|Самовывоз
+						.l-t
+							|Бесплатно
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| сегодня
+					.col-md-6.wrap
+						.b-t
+							|Доставка
+						.l-t
+							|Бесплатно
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| 1 день
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|По Волгограду
+						=image_tag("delivery.svg", class: "post")
+					.col-md-6.wrap
+						.b-t
+							|Самовывоз
+						.l-t
+							|Бесплатно
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| сегодня
+					.col-md-6.wrap
+						.b-t
+							|Доставка
+						.l-t
+							|Бесплатно
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| 1 день
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|По МО
+						=image_tag("delivery.svg", class: "post")
+					.col-md-6.wrap
+						.b-t
+							|Самовывоз
+						.l-t
+							|В Москве
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| сегодня
+					.col-md-6.wrap
+						.b-t
+							|Доставка
+						.l-t
+							|390 руб.
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| 1-2 дня
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|По России
+						=image_tag("post.svg", class: "post")
+					.col-md-6.wrap
+						.b-t
+							|Самовывоз
+						.l-t
+							|300 руб.
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| 1-4 дня
+					.col-md-6.wrap
+						.b-t
+							|Доставка
+						.l-t
+							|500 руб.
+						.time
+							span.glyphicon.glyphicon-time
+							span.time-text
+								| 2-7 дней
+
+		.row
+			br
+			h2.text-center
+				| Способы оплаты
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|Наличными
+						=image_tag("pay1.png", class: "pay")
+					.col-md-10.wrap
+						h4.pay-text
+							|Оплата при получении заказа.
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|Картой
+						=image_tag("pay2.png", class: "pay")
+					.col-md-12.wrap
+						=image_tag("card.svg")
+					.col-md-12
+						.security-lock
+							span.glyphicon.glyphicon-lock
+							span.sec-text Безопасная оплата
+			.col-md-4
+				.color-wrap
+					.col-md-12
+						h3
+							|Онлайн
+						=image_tag("pay3.png", class: "pay")
+					.col-md-12.wrap
+						=image_tag("web-pay.svg")
+					.col-md-12
+						.security-lock
+							span.glyphicon.glyphicon-lock
+							span.sec-text Безопасная оплата
+
 

@@ -1,92 +1,90 @@
 #kit-block.kits
 	.container
-		.background
+		//.background
 		.row
-			h2.text-center
+			h2.text-center.first-h
 				|Выберите комплект
-			.col-md-6.col-md-offset-3.text-center.plastic-ord
-				h4 При заказе двух и более комплектов Вы получаете скидку в 300 рублей на каждый!
 			.col-md-4.kit.first
 				div.kit-wrap
 					div.kit-name
 						.line
 						=image_tag("kits/k1.jpg")
-						h3.text-center
-							|Базовый
+						h3.text-center.icon
+							|Базовый набор
 					.price
 						| 3790
 						span.currency
 							|руб
-					.clarif
-						|69 метров пластика.
-						br
 						//span.eco
 						//	|590 рублей экономия.
 					ul.kit-list
 						li 3D ручка Myriwell Stereo второго поколения
-						li Демо-пластик 3 цвета по 3 метра
+						li 
+							|Демо-пластик 3 цвета по 3 метра 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Демо-пластик идёт в комплекте 3D ручки уже с завода-изготовителя. Цвета и тип пластика случайные."
 						li
-							b
-								|60 метров пластика ABS 
-								| (6 цветов)
+							|60 метров пластика ABS 
+							| (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Прочный, гибкий, пластичный и термостойкий пластик. При рисовании имеет небольшой запах горелой пластмассы из-за нефтянной основы."
 					div.text-center.btn-block
-						a.kit-buy-btn data-toggle="modal" data-target=".form-1"
-							| Заказать
+						a.kit-btn-buy data-toggle="modal" data-target=".form-1"
+							| Купить
 			.col-md-4.kit.second
 				div.kit-wrap
 					div.kit-name
 						.line
 						=image_tag("kits/k2.jpg")
 						h3.text-center
-							|Рекомендуемый
+							|Стандартный набор
 					.price
 						| 4210
 						span.currency
 							|руб
-					.clarif
-						|129 метров пластика.
-						br
 						//span.eco
 						//	|900 рублей экономия
 					ul.kit-list
 						li 3D ручка Myriwell Stereo второго поколения
-						li Демо-пластик 3 цвета по 3 метра
 						li 
-							b 120 метров пластика ABS (6 цветов)
+							|Демо-пластик 3 цвета по 3 метра 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Демо-пластик идёт в комплекте 3D ручки уже с завода-изготовителя. Цвета и тип пластика случ	айные."
 						li 
-							b DVD диск с видеоуроками и трафаретами в подарок
+							|60 метров пластика ABS (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Прочный, гибкий, пластичный и термостойкий пластик. При рисовании имеет небольшой запах горелой пластмассы из-за нефтянной основы."
+						li 
+							|60 метров пластика PLA (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Биопластик, созданный на растительной основе. Не имеет запаха при рисованиии. Фигуры из него получаются чуть более глянцевыми."
 					div.text-center.btn-block
-						a.kit-buy-btn data-toggle="modal" data-target=".form-2"
-							| Заказать
-			.col-md-4.kit.third
+						a.kit-btn-buy-green data-toggle="modal" data-target=".form-2"
+							| Купить
+			.col-md-4.kit.first
 				div.kit-wrap
 					div.kit-name
 						.line
 						=image_tag("kits/k3.jpg")
 						h3.text-center
-							|Расширенный
+							|Расширенный набор
 					.price
-						| 4850
+						| 5350
 						span.currency
 							|руб
-					.clarif
-						|129 метров пластика.
-						br
 						//span.eco
 						//	|1210 рублей экономия.
 					ul.kit-list
 						li 3D ручка Myriwell Stereo второго поколения
-						li Демо-пластик 3 цвета по 3 метра
 						li 
-							b 120 метров пластика  ABS (6 цветов)
-						li 
-							b 60 метров пластика  PLA (6 цветов)
-						li 
-							b DVD диск с видеоуроками и трафаретами в подарок
+							|Демо-пластик 3 цвета по 3 метра 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Демо-пластик идёт в комплекте 3D ручки уже с завода-изготовителя. Цвета и тип пластика случайные."
 						li
-							b
-								|5% cкидка на следуюшую покупку
+							|120 метров пластика  ABS (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Прочный, гибкий, пластичный и термостойкий пластик. При рисовании имеет небольшой запах горелой пластмассы из-за нефтянной основы."
+						li 
+							|120 метров пластика  PLA (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Биопластик, созданный на растительной основе. Не имеет запаха при рисованиии. Фигуры из него получаются чуть более глянцевыми."
+						li 
+							|DVD диск с видеоуроками и трафаретами в подарок 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="20 мастерклассов, каждый из которых показывает создание совершенно необычных изделий или механизмов с помощью 3D ручки. А так же 50 трафаретов, которые помогут Вам или Вашему ребёнку в создании первых шедевров из пластика."
+						li 5% cкидка на следуюшую покупку
 					div.text-center.btn-block
-						a.kit-buy-btn data-toggle="modal" data-target=".form-3"
-							| Заказать
+						a.kit-btn-buy data-toggle="modal" data-target=".form-3"
+							| Купить
 	=render "plastic"
