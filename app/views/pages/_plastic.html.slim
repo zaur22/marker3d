@@ -1,11 +1,7 @@
 .plastics
 	.container
 		.row
-			h2.text-center
-				|Наборы цветного пластика
-			.col-md-6.col-md-offset-3.text-center.plastic-ord
-				h4 Покупателям комплекта 3D ручки даётся постоянная скидка в 25% на покупку пластика.
-			.col-md-4.col-md-offset-2.kit.plastic
+			.col-md-4.kit.plastic
 				.kit-wrap
 					=image_tag("plastic.jpg")
 					h4.text-center
@@ -44,4 +40,24 @@
 						span.currency руб
 					div.text-center
 							a.btn.btn-default.btn-success.btn-lg data-toggle="modal" data-target=".plastic-2"
-								| Заказать пластик
+								|Заказать пластик
+			.col-md-4.kit.plastic
+				.kit-wrap
+					=image_tag("plastic.jpg")
+					h4.text-center
+						|ABS пластик
+						br
+						|6 цветов по 20 метров
+					.plastic-color
+						span.blue
+						span.purp
+						span.red
+						span.orange
+						span.yellow	
+						span.lime
+					.price
+						|990
+						span.currency руб
+					div.text-center
+						a.btn.btn-default.btn-success.btn-lg data-toggle="modal" data-target=".plastic"
+							|Заказать пластик

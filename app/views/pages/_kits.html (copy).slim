@@ -1,0 +1,91 @@
+#kit-block.kits
+	.container
+		//.background
+		.row
+			h2.text-center.first-h
+				|Выберите комплект
+			.col-md-4.kit.first
+				div.kit-wrap
+					div.kit-name
+						.line
+						=image_tag("pen.png	")
+						h3.text-center.icon
+							|3D ручка MyRiwell 1
+					.price
+						| 3790
+						span.currency
+							|руб
+						//span.eco
+						//	|590 рублей экономия.
+					ul.kit-list
+						li 3D ручка Myriwell Stereo второго поколения
+						li 
+							|Демо-пластик 3 цвета по 3 метра 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Демо-пластик идёт в комплекте 3D ручки уже с завода-изготовителя. Цвета и тип пластика случайные."
+						li
+							|60 метров пластика ABS 
+							| (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Прочный, гибкий, пластичный и термостойкий пластик. При рисовании имеет небольшой запах горелой пластмассы из-за нефтянной основы."
+					div.text-center.btn-block
+						a.kit-btn-buy data-toggle="modal" data-target=".form-1"
+							| Купить
+			.col-md-4.kit.second
+				div.kit-wrap
+					div.kit-name
+						.line
+						=image_tag("pen.png")
+						h3.text-center
+							|Стандартный набор
+					.price
+						| 4210
+						span.currency
+							|руб
+						//span.eco
+						//	|900 рублей экономия
+					ul.kit-list
+						li 3D ручка Myriwell Stereo второго поколения
+						li 
+							|Демо-пластик 3 цвета по 3 метра 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Демо-пластик идёт в комплекте 3D ручки уже с завода-изготовителя. Цвета и тип пластика случ	айные."
+						li 
+							a data-toggle="tooltip" data-placement="bottom" title="Прочный, гибкий, пластичный и термостойкий пластик. При рисовании имеет небольшой запах горелой пластмассы из-за нефтянной основы."
+								|60 метров пластика ABS (6 цветов) 
+
+						li 
+							|60 метров пластика PLA (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Биопластик, созданный на растительной основе. Не имеет запаха при рисованиии. Фигуры из него получаются чуть более глянцевыми."
+					div.text-center.btn-block
+						a.kit-btn-buy-green data-toggle="modal" data-target=".form-2"
+							| Купить
+			.col-md-4.kit.first
+				div.kit-wrap
+					div.kit-name
+						.line
+						=image_tag("pen.png")
+						h3.text-center
+							|Расширенный набор
+					.price
+						| 5350
+						span.currency
+							|руб
+						//span.eco
+						//	|1210 рублей экономия.
+					ul.kit-list
+						li 3D ручка Myriwell Stereo второго поколения
+						li 
+							|Демо-пластик 3 цвета по 3 метра 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Демо-пластик идёт в комплекте 3D ручки уже с завода-изготовителя. Цвета и тип пластика случайные."
+						li
+							|120 метров пластика  ABS (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Прочный, гибкий, пластичный и термостойкий пластик. При рисовании имеет небольшой запах горелой пластмассы из-за нефтянной основы."
+						li 
+							|120 метров пластика  PLA (6 цветов) 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="Биопластик, созданный на растительной основе. Не имеет запаха при рисованиии. Фигуры из него получаются чуть более глянцевыми."
+						li 
+							|DVD диск с видеоуроками и трафаретами в подарок 
+							a.glyphicon.glyphicon-question-sign data-toggle="tooltip" data-placement="bottom" title="20 мастерклассов, каждый из которых показывает создание совершенно необычных изделий или механизмов с помощью 3D ручки. А так же 50 трафаретов, которые помогут Вам или Вашему ребёнку в создании первых шедевров из пластика."
+						li 5% cкидка на следуюшую покупку
+					div.text-center.btn-block
+						a.kit-btn-buy data-toggle="modal" data-target=".form-3"
+							| Купить
+	=render "plastic"
