@@ -14,6 +14,7 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery.slick	
+//= require masonry.pkgd
 //= require_tree .
 
 
@@ -23,35 +24,34 @@ $(function(){
   var $video = $("video");
   $video.on('canplaythrough', function() {this.play();});
 
-   $('[data-toggle="tooltip"]').tooltip()
+  $('.carousel').carousel({
+         interval: 0
+  }) 
 
-	$('.slick-carousel').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		autoplay: true,
-    	autoplaySpeed: 0,
-    	speed: 18000,
-    	//variableWidth: true,
-    	infinite: true,
-    	cssEase: 'linear',
-    	easing: 'linear',
-    	//adaptiveHeight: true
-  	});
+	$('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    percentPosition: true
+  });
+  $('.pen-image-gallery').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.pen-image-nav'
+  });
+  $('.pen-image-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.pen-image-gallery',
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    focusOnSelect: true,
+  });
 
-	$('.slick-3dpen-carousel').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		arrows: false,
-		pauseOnHover: false,
-		autoplay: true,
-    	autoplaySpeed: 0,
-    	speed: 12000,
-    	variableWidth: true,
-    	infinite: true,
-    	cssEase: 'linear',
-    	easing: 'linear',
-    	adaptiveHeight: true
-  	});
+  $('.pen-image-nav').slick('setPosition'); 
+
   	$( window ).scroll(function(){
 		if($("#navbar").offset().top > 0){
 			$("#navbar").addClass("white-nav");

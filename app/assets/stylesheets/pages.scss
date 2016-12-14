@@ -22,6 +22,10 @@ $second-color: #0666c9;
 $backgr_color_1: #d0dcff;
 $backgr_color_2: #FFB74D;
 
+body{
+	background-color: #e9eaec !important;
+}
+
 .learn-more{
 	font-size: 16px;
 	margin-left: 40px;
@@ -232,4 +236,57 @@ $backgr_color_2: #FFB74D;
 		color: #808080;
 		text-decoration: none;	
 	}
+}
+
+.modal-body{
+	overflow: hidden;
+}
+
+
+.pen-image-gallery{
+	img{
+		max-width: 100%;
+	}
+}
+
+.pen-image-nav{
+	img{
+		max-width: 100%;
+	}
+}
+
+.buy-btn-red{
+	font-family: 'Roboto';
+	font-size: 16px;
+    line-height: 42px;
+	background-color: #a70909;
+    background: -webkit-linear-gradient(#f14040, #a70909);
+    background: linear-gradient(#f14040, #a70909);
+    border-color: #a70909;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 1px;
+    text-align: center;
+    white-space: nowrap;
+    &:hover {
+	    background-color: #920707;
+    	background: -webkit-linear-gradient(#de3d3d, #920707);
+    	background: linear-gradient(#de3d3d, #920707);
+    	border-color: #920707;
+	    text-decoration: none;
+	    color: #fff;
+	}
+}
+
+
+.all-width{
+	width: auto;
+	display: block;
 }

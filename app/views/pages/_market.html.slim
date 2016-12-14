@@ -1,0 +1,100 @@
+#market
+	.container
+		.row
+			.col-md-4
+				.market-kit.first 
+					#pens-present-carou.carousel.slide data-ride="carousel"
+						ol.carousel-indicators
+    						li.li-blue data-target="#pens-present-carou" data-slide-to="0" class="active"
+    						li.li-pink data-target="#pens-present-carou" data-slide-to="1"
+    						li.li-purp data-target="#pens-present-carou" data-slide-to="2"
+    						li.li-yellow data-target="#pens-present-carou" data-slide-to="3"
+					 	.carousel-inner
+  							.item.active
+      							=image_tag("market/myriwell_blue.jpg")
+      						.item
+      							=image_tag("market/myriwell_pink.jpg")
+      						.item
+      							=image_tag("market/myriwell_purp.jpg")
+      						.item
+      							=image_tag("market/myriwell_yellow.jpg")
+      				a.market-kit-link-block data-toggle="modal" data-target="#myriwellPen"
+      					.name.lnk
+      						|3D ручка Myriwell Stereo rp-100b с LCD дисплеем.	
+					.price-item
+						.not-price
+							|4590р.
+						.price
+							|3990
+							span.rub р.
+						.sale
+							.money
+								|600
+							.eco
+								|экономия
+					a.buy-btn-red data-toggle="modal" data-target=".form-1"
+							| Купить
+			.col-md-8
+				.market-kit.second
+					.market-first-kit-image
+						=image_tag("market/items.jpg")
+      				a.market-kit-link-block data-toggle="modal" data-target="#myriwellKit"
+      					.name.lnk
+      						|3D ручка Myriwell Stereo + ABS пластик 6 цветов (60м.) + PLA пластик 6 цветов (60м.) + обучающий DVD диск
+      				.row
+      					.col-md-6
+      						.description
+      							|Подарочный набор, в котором собрано всё, что нужно для 3D рисования!
+						.col-md-6.price-item
+							.not-price
+								|5990р.
+							.price
+								|4990
+								span.rub р.
+							.sale
+								.money
+									|1000
+								.eco
+									|экономия
+					a.buy-btn-red data-toggle="modal" data-target=".form-2"
+							| Купить
+
+	#new-year
+		.container
+			.row
+				.col-md-12
+					.market-kit
+						.row
+							.col-md-4
+								.promo-color
+									h2.promo
+										b
+											|Покупайте Новогодние подарки вместе с нами! 
+									.promo-text
+											|Купите два или больше подарочных наборов, и получите скидку в 300 руб на каждую!
+							.col-md-8
+								.market-first-kit-image
+									=image_tag("market/items.jpg")
+			      				a.market-kit-link-block data-toggle="modal" data-target="#myriwellKit"
+			      					.name
+			      						|3D ручка Myriwell Stereo + ABS пластик 6 цветов (60м.) + PLA пластик 6 цветов (60м.) + обучающий DVD диск
+			      				.row
+			      					.col-md-6
+			      						.description
+			      							|Подарочный набор, в котором собрано всё, что нужно для 3D рисования!
+									.col-md-6.price-item
+										.not-price
+											|5990р.
+										.price
+											|4990
+											span.rub р.
+										.sale
+											.money
+												|1000
+											.eco
+												|экономия
+								a.buy-btn-red.NY data-toggle="modal" data-target=".form-2"
+										| Купить
+
+.kits
+	=render "plastic"
