@@ -920,7 +920,7 @@ body{
 
 #market{
 	background-color: #e9eaec;
-    padding-top: 60px;
+    padding-top: 120px;
     padding-bottom: 60px;
     #pens-present-carou{
     	border-bottom: 1px solid #e9eaec;
@@ -979,6 +979,10 @@ body{
     	&.active{
 			border: 2px solid #000;
     	}
+    }
+    li{
+    	width: 15px;
+    	height: 15px;
     }
 	.name{
 		font-family: 'Helvetica', Helvetica, arial, sans-serif;
@@ -1256,6 +1260,6 @@ body{
 		padding-right: 10px;
 	}
 	.btn-block{
-		padding-top: 200px;
+		padding-top: 30px;
 	}
 }
