@@ -1,4 +1,4 @@
-#market
+.market
 	.container
 		.row
 			.col-md-4
@@ -9,7 +9,8 @@
     						li.li-pink data-target="#pens-present-carou" data-slide-to="1"
     						li.li-purp data-target="#pens-present-carou" data-slide-to="2"
     						li.li-yellow data-target="#pens-present-carou" data-slide-to="3"
-					 	.carousel-inner
+
+					 	.carousel-inner data-toggle="modal" data-target="#myriwellPen"
   							.item.active
       							=image_tag("market/myriwell_blue.jpg")
       						.item
@@ -36,7 +37,7 @@
 							| Купить
 			.col-md-8
 				.market-kit.second
-					.market-first-kit-image
+					.market-first-kit-image data-toggle="modal" data-target="#myriwellPen"
 						=image_tag("market/items.jpg")
       				a.market-kit-link-block data-toggle="modal" data-target="#myriwellKit"
       					.name.lnk
@@ -59,21 +60,21 @@
 					a.buy-btn-red data-toggle="modal" data-target=".form-2"
 							| Купить
 
-	#new-year
+	.new-year
 		.container
 			.row
 				.col-md-12
 					.market-kit
 						.row
 							.col-md-4
-								.promo-color
+								.promo-color data-toggle="modal" data-target="#myriwellKit"
 									h2.promo
 										b
 											|Покупайте Новогодние подарки вместе с нами! 
 									.promo-text
 											|Купите два или больше подарочных наборов, и получите скидку в 300 руб на каждую!
 							.col-md-8
-								.market-first-kit-image
+								.market-first-kit-image data-toggle="modal" data-target="#myriwellPen"
 									=image_tag("market/items.jpg")
 			      				a.market-kit-link-block data-toggle="modal" data-target="#myriwellKit"
 			      					.name

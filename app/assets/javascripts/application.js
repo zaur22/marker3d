@@ -65,14 +65,18 @@ $(function(){
   $('.duo-block .btn-block').click(function(){
     $(this).closest(".duo-block").addClass('msg-send')
   })
-
-  
-  $('#grid-scope').masonry({
-    // options
-    itemSelector: '.grid-item',
-    percentPosition: true
-  }).imagesLoaded(function() {
-      $('#grid-scope  ').masonry('reload');
+  $(window).load(function(){
+    $('#grid-scope').masonry({
+         itemSelector : '.grid-item',
+         percentPosition: true,
+         isAnimated: true,
+         animationOptions: {
+              duration: 700,
+              easing: 'linear',
+              queue: false
+         }
+    });
   });
-
 });
+
+
