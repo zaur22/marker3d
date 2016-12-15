@@ -927,6 +927,8 @@ body{
     }
     .market-first-kit-image{
     	cursor: pointer;
+    	max-width: 100%;
+    	overflow: hidden;
     }
     .market-kit{
 		background: #fff;
@@ -998,8 +1000,21 @@ body{
 		color: #000;
 		font-weight: bold;
 		padding: 15px;
+		padding-bottom: 0px;
 		&:hover{
 			color: #ed1c24;
+		}
+	}
+	.more-link{
+		position: relative;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 15px;
+		.glyphicon{
+			font-size: 11px;
+			position: relative;
+			top: 1px;
+			left: 2px;
 		}
 	}
 	.price-item{
@@ -1055,9 +1070,9 @@ body{
 		}
 	}
 	.description{
-		margin-top: -5px;
+		margin-top: 5px;
 		padding: 0px 15px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.buy-btn-red{
@@ -1183,7 +1198,7 @@ body{
 .promo-color{
 	cursor: pointer;
 	display: block;
-	min-height: 377px;
+	min-height: 392px;
 	margin-right: -30px;	
 	margin-top: -20px;
 	background: rgb(242,225,198);
@@ -1280,5 +1295,11 @@ body{
 	.new-year{
 		margin: 0px;
 		padding: 120px 0px 90px;
+	}
+}
+
+.slick-arrow{
+	&:before{
+		color: #000;
 	}
 }
