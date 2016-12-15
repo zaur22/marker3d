@@ -28,11 +28,7 @@ $(function(){
          interval: 0
   }) 
 
-	$('.grid').masonry({
-    // options
-    itemSelector: '.grid-item',
-    percentPosition: true
-  });
+
   $('.pen-image-gallery').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -40,6 +36,8 @@ $(function(){
     fade: true,
     asNavFor: '.pen-image-nav'
   });
+
+
   $('.pen-image-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -50,15 +48,16 @@ $(function(){
     focusOnSelect: true,
   });
 
-  $('.pen-image-nav').slick('setPosition'); 
+  $('.pen-image-nav').slick('setPosition');
 
-  	$( window ).scroll(function(){
+
+  $( window ).scroll(function(){
 		if($("#navbar").offset().top > 0){
 			$("#navbar").addClass("white-nav");
 		}else{
 			$("#navbar").removeClass("white-nav");
 		}
-  	})
+  })
 
   $('.modal-body .btn-block').click(function(){
     $(this).closest(".modal-body").addClass('success-wrap')
@@ -66,4 +65,14 @@ $(function(){
   $('.duo-block .btn-block').click(function(){
     $(this).closest(".duo-block").addClass('msg-send')
   })
+
+  
+  $('#grid-scope').masonry({
+    // options
+    itemSelector: '.grid-item',
+    percentPosition: true
+  }).imagesLoaded(function() {
+      $('#grid-scope  ').masonry('reload');
+  });
+
 });
