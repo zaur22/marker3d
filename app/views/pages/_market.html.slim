@@ -66,6 +66,11 @@
 					a.buy-btn-red data-toggle="modal" data-target=".form-2"
 							| Купить
 
+
+.kits
+	=render "plastic"
+
+.market.other
 	.new-year
 		.container
 			.row
@@ -76,9 +81,9 @@
 								.promo-color data-toggle="modal" data-target="#myriwellKit"
 									h2.promo
 										b
-											|3D ручка это лучший подарок 2016 года.
+											|Дарите подарки вместе с нами!
 									.promo-text
-											|Она проста в использовании	и даёт большие возможности! 3D ручка будет интересна не только детям, но и просто творческим людям!
+											|Купите два или больше расширенных набора и получайте скидку в 400 рублей на каждый комплект!
 							.col-md-8
 								.market-first-kit-image data-toggle="modal" data-target="#myriwellKit"
 									=image_tag("market/items.jpg")
@@ -104,7 +109,4 @@
 											.eco
 												|экономия
 								a.buy-btn-red.NY data-toggle="modal" data-target=".form-2"
-										| Купить
-
-.kits
-	=render "plastic"
+										| Купить	
