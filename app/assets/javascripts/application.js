@@ -43,8 +43,8 @@ $(function(){
     slidesToScroll: 1,
     asNavFor: '.pen-image-gallery',
     centerMode: true,
-    //autoplay: true,
-    //autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     focusOnSelect: true,
   });
 
